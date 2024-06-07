@@ -48,14 +48,14 @@ class _ContactListScreenState extends State<ContactListScreen> {
         title: const Text('Delete Contact'),
         content: const Text('Are you sure you want to delete this contact?'),
         actions: <Widget>[
-          TextButton(
-            child: const Text('Cancel'),
+          IconButton(
+            icon: const Icon(Icons.disabled_by_default),
             onPressed: () {
               Navigator.of(ctx).pop();
             },
           ),
-          TextButton(
-            child: const Text('Delete'),
+          IconButton(
+            icon: const Icon(Icons.delete),
             onPressed: () {
               setState(() {
                 _contacts.removeAt(index);
@@ -113,6 +113,7 @@ class _ContactListScreenState extends State<ContactListScreen> {
                       leading: const Icon(Icons.account_circle_rounded,size: 48,),
                       tileColor: Colors.grey.shade300,
                       title: Text(_contacts[index]['name']!),
+                      titleTextStyle: const TextStyle(color: Colors.redAccent),
                       subtitle: Text(_contacts[index]['number']!),
                       trailing: const Icon(Icons.phone),
                     ),

@@ -20,19 +20,19 @@ ThemeData _lightThemeData() {
     brightness: Brightness.light,
     inputDecorationTheme: const InputDecorationTheme(
       enabledBorder:
-      OutlineInputBorder(borderSide: BorderSide(color: Colors.blueAccent)),
+      OutlineInputBorder(borderSide: BorderSide(color: Colors.grey)),
       focusedBorder:
-      OutlineInputBorder(borderSide: BorderSide(color: Colors.blue)),
+      OutlineInputBorder(borderSide: BorderSide(color: Colors.grey)),
       errorBorder:
       OutlineInputBorder(borderSide: BorderSide(color: Colors.red)),
     ),
     appBarTheme:
-    const AppBarTheme(color: Colors.blue, foregroundColor: Colors.white),
+    const AppBarTheme(color: Colors.grey, foregroundColor: Colors.white),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.all(16),
         fixedSize: const Size.fromWidth(double.maxFinite),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.grey,
         foregroundColor: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),
@@ -40,7 +40,7 @@ ThemeData _lightThemeData() {
       ),
 
     ),
-    floatingActionButtonTheme:const FloatingActionButtonThemeData(backgroundColor: Colors.blue,foregroundColor: Colors.white)
+    floatingActionButtonTheme:const FloatingActionButtonThemeData(backgroundColor: Colors.grey,foregroundColor: Colors.white)
     ,
   );
 }
@@ -50,13 +50,13 @@ ThemeData _darkThemeData() {
     brightness: Brightness.dark,
     inputDecorationTheme: const InputDecorationTheme(
       enabledBorder:
-      OutlineInputBorder(borderSide: BorderSide(color: Colors.blueAccent)),
+      OutlineInputBorder(borderSide: BorderSide(color: Colors.grey)),
       focusedBorder:
-      OutlineInputBorder(borderSide: BorderSide(color: Colors.blue)),
+      OutlineInputBorder(borderSide: BorderSide(color: Colors.grey)),
       errorBorder:
       OutlineInputBorder(borderSide: BorderSide(color: Colors.red)),
     ),
     appBarTheme:
-    const AppBarTheme(color: Colors.blue, foregroundColor: Colors.white),
+    const AppBarTheme(color: Colors.grey, foregroundColor: Colors.white),
   );
 }
